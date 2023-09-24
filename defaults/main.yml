@@ -1,5 +1,5 @@
 ---
 
 remove_nag: True
-remove_enterprise_repo: True
-add_no_subscription_repo: True
+remove_enterprise_repo: False
+add_no_subscription_repo: False
