@@ -1,6 +1,6 @@
 ---
 - hosts: all
-    tasks:
+  tasks:
       - name: removes subscription nag box
         include_tasks:
           file: remove-nag.yml
