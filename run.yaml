@@ -1,6 +1,14 @@
 ---
   - hosts: all
     tasks:
-      - remove-nag:
-      - remove-enterprise-repo:
-      - add-no-subscription-repo:
+      - name: removes subscription nag box
+          file: remove-nag.yml
+          when: remove_nag
+
+      - name: remove enterprise repo
+          file: remove-enterprise-repo.yml
+          when: remove_enterprise_repo
+      
+      - name: add no subcription repo
+          file: add-no-subscription-repo.yml
+          when: add_no_subscription_repo
