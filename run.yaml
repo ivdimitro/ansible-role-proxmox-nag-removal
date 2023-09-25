@@ -1,0 +1,6 @@
+---
+  hosts: all
+  tasks:
+    - remove-nag:
+    - remove-enterprise-repo:
+    - add-no-subscription-repo:
